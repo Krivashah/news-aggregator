@@ -1,4 +1,5 @@
 # News Aggregator
+![image](https://github.com/user-attachments/assets/ca3087d5-be90-458c-9e89-e123da2e9910)
 Fetches latest news from NewsAPI
 
 What It Does:
@@ -42,3 +43,5 @@ Changes categories when you click buttons
 Uses fetch() to get data from NewsAPI
 
 Stores news in articles state variable
+
+
