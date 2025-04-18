@@ -21,7 +21,7 @@ git clone https://github.com/your-username/news-aggregator.git
 cd news-aggregator
 
 # 2. Add API key
-echo "VITE_API_KEY=your_api_key_here" > .env
+VITE_API_KEY=your_api_key_here
 
 # 3. Install dependencies
 npm install
