@@ -1,12 +1,44 @@
-# React + Vite
+# News Aggregator
+Fetches latest news from NewsAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What It Does:
+Shows top news headlines (US by default)
 
-Currently, two official plugins are available:
+Lets you search for any news topic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Filter news by categories (Sports, Tech, Business, etc.)
 
-## Expanding the ESLint configuration
+Displays news cards with images, titles, and links
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# How to Run It (For Faculty/Testers)
+1. Get a Free API Key
+Go to NewsAPI.org → Sign up → Get free API key
+
+2. Set Up Project
+bash
+# 1. Clone project
+git clone https://github.com/your-username/news-aggregator.git
+cd news-aggregator
+
+# 2. Add API key
+echo "VITE_API_KEY=your_api_key_here" > .env
+
+# 3. Install dependencies
+npm install
+
+# 4. Run locally
+npm run dev
+→ Open http://localhost:5173
+
+**How It Works (Simple Code Breakdown)**
+App.jsx does all the work:
+
+Fetches news on page load
+
+Searches when you type + press Enter
+
+Changes categories when you click buttons
+
+Uses fetch() to get data from NewsAPI
+
+Stores news in articles state variable
